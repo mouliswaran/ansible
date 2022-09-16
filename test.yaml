@@ -9,4 +9,5 @@
     - name: To enable and start Nginx
       service:
         name: nginx
-        state: stopped
+        state: started
+        
