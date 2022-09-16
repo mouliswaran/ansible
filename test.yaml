@@ -2,10 +2,10 @@
 - hosts: webserver
   become: yes
   tasks:
-    - name: install the specific version of Apache
+    - name: install the latest version of Nginx
       yum:
-        name: nginx-1.21.2
-        state: present   
+        name: nginx
+        state: latest
     - name: To enable and start Nginx
       service:
         name: nginx
